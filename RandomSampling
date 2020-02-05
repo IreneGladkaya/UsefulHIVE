@@ -1,0 +1,22 @@
+--http://www.joefkelley.com/736/
+select * from my_table
+limit 10000;
+
+select * from my_table
+order by rand()
+limit 10000;
+
+select * from my_table
+sort by rand()
+limit 10000;
+
+select * from my_table
+distribute by rand()
+sort by rand()
+limit 10000;
+
+select * from my_table
+where rand() <= 0.0001
+distribute by rand()
+sort by rand()
+limit 10000;
